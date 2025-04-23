@@ -2,11 +2,6 @@ name: "CI - Nix"
 
 on:
   push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
 
 jobs:
   nix:
