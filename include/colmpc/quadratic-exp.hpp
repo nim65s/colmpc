@@ -182,7 +182,7 @@ struct ActivationDataExpTpl : public ActivationDataAbstractTpl<_Scalar> {
   typedef ActivationDataAbstractTpl<Scalar> Base;
 
   template <template <typename Scalar> typename Activation>
-  explicit ActivationDataExpTpl(Activation *const activation)
+  explicit ActivationDataExpTpl(Activation<Scalar> *const activation)
       : Base(activation),
         v(activation->get_nr()),
         vn(activation->get_nr()),
